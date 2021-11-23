@@ -8,6 +8,7 @@ public class Driver
   		Shape 		shape;
   		Circle 		circle = new Circle("Circle One", "Red", 10.0);
   		Rectangle	rectangle = new Rectangle("Rectangle One", "Yellow", 15.0, 20.0);
+  		Triangle    triangle = new Triangle("Triangle One", "Black", 7.0, 10.0 );
   		Cylinder	cylinder = new Cylinder("Cylinder One", "Green", 6, 8);
   		Sphere		sphere = new Sphere("Sphere One", "Blue", 77);
   		
@@ -32,6 +33,11 @@ public class Driver
   		shape = rectangle;
   		System.out.println("\n---Using shape superclass reference for a rectangle " + shape.toString());
   		System.out.println("Rectangle area = " + shape.area()); //polymorphic call using superclass reference
+  		
+  		shape = triangle;
+  		System.out.println("\n---Using shape superclass reference for a rectangle " + shape.toString());
+  		System.out.println("Triangle area = " + shape.area()); //polymorphic call using superclass reference
+  		
   		
   		shape = cylinder;
   		System.out.println("\n---Using shape superclass reference for a cylinder " + shape.toString());
